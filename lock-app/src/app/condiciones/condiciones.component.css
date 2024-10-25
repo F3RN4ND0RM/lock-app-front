@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  color: #2a2a2a;
+  margin-bottom: 1em;
+}
+
+.title h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 0;
+  color: #00796b;
+}
+
+.container {
+  overflow-y: auto; /* Cambiado a auto para permitir desplazamiento si es necesario */
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease; /* Añadida transición para suavidad */
+}
+
+.card-container header {
+  margin-top: 40em;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  color: #444;
+  text-align: center;
+}
+
+.card-container p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.6em;
+  color: #555;
+  margin: 0.5em 0;
+}
+
+.card-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+  font-size: 0.95em;
+}
+
+.card-container ul li {
+  padding: 0.4em 0;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.card-container ul li::before {
+  content: '✓';
+  color: #00796b;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.footer-links {
+  margin-top: 1.5em;
+  font-size: 0.9em;
+  color: #00796b;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #00796b;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  margin: 0 0.5em;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #00796b;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #005b53;
+}
+
+.button-link.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.button-link.secondary:hover {
+  background-color: #bdbdbd;
+}
